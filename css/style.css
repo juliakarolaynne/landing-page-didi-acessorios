@@ -60,7 +60,7 @@ body {
 #hero {
     position: relative;
     min-height: 620px;
-    background-image: url("/assets/img/Car.png");
+    background-image: url("../assets/img/car.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,7 +326,7 @@ body {
         justify-content: center;
         padding-top: 5.5rem;
         padding-bottom: 2.5rem;
-        background-image: url("/assets/img/car-mobile.jpg");
+        background-image: url("../assets/img/car-mobile.jpg");
         background-position: center bottom;
         background-size: cover;
     }
@@ -336,12 +336,10 @@ body {
     }
 
     #hero::before {
-        background: linear-gradient(
-            180deg, 
-            rgba(10, 10, 10, 0.75) 0%, 
-            rgba(10, 10, 10, 0.25) 50%, 
-            rgba(10, 10, 10, 0.9) 100%
-        ) !important;
+        background: linear-gradient(180deg,
+                rgba(10, 10, 10, 0.75) 0%,
+                rgba(10, 10, 10, 0.25) 50%,
+                rgba(10, 10, 10, 0.9) 100%) !important;
     }
 
     #hero h1 {
@@ -376,6 +374,6 @@ body {
         font-weight: 700;
         padding: 0.85rem 1.2rem;
         border-radius: 50px;
-        box-shadow: 0 4px 20px rgba(229, 9, 20, 0.4); 
+        box-shadow: 0 4px 20px rgba(229, 9, 20, 0.4);
     }
 }
