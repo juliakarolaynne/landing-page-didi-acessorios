@@ -1,163 +1,273 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-PT" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIDI Acessórios Automotivos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-        <img src="/assets/logo/Logo.png" alt="Logo da DIDI Acessórios Automotivos">
 
-        <div class="menu">
-            <a href="#hero">Início</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#sobre">Marcas</a>
-            <a href="#contato">Contato</a>
-            <button> <img src="/assets/icons/whats1.svg" alt="Ícone do WhatsApp"> Solicitar um orçamento</button>
-        </div>
-
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">
+                    <img src="/assets/logo/logo.jpg" alt="DIDI" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#marcas">Marcas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                    <a href="https://wa.me/5511999999999" class="btn btn-primary px-4 py-2">
+                        <img src="assets/icons/whats1.svg" alt=" WhatsApp" class="me-2" height="25">Solicitar
+                        orçamento</a>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <main>
         <section id="hero">
-            <h1>PEÇAS E ACESSÓRIOS</h1>
-            <h1>COM QUALIDADE</h1>
-            <h2>E ATENDIMENTO ESPECIALIZADO</h2>
-            <H3>Tudo o que você precisa para o seu carro em um só lugar. Venha para a DIDI!</H3>
-            <button> <img src="/assets/icons/whats1.svg" alt="Ícone do WhatsApp"> Solicite um orçamento</button>
-            <h4>Atendimento rápido pelo WhatsApp</h4>
-            <img src="/assets/img/Car.png" alt="Imagem de um carro">
-        </section>
-
-        <section id="diferenciais">
-            <div class="qualidade">
-                <img src="/assets/icons/qualidade.svg" alt="Ícone de qualidade">
-                <h2>Produtos de Qualidade</h2>
-                <p>Trabalhamos com as melhores <br> marcas do mercado.</p>
-            </div>
-
-            <div class="atendimento">
-                <img src="/assets/icons/atendente.svg" alt="Ícone de atendimento">
-                <h2>Atendimento Especializado</h2>
-                <p>Equipe pronta para te ajudar <br> a encontrar o que precisa.</p>
-            </div>
-
-            <div class="seguranca">
-                <img src="/assets/icons/seguranca.svg" alt="Ícone de segurança">
-                <h2>Confiança e Segurança</h2>
-                <p>Mais de anos oferecendo <br> o melhor para você.</p>
-            </div>
-
-            <div class="agilidade">
-                <img src="/assets/icons/agilidade.svg" alt="Ícone de agilidade">
-                <h2>Agilidade</h2>
-                <p>Orçamento rápido e entrga <br> ágil para seu conforto.</p>
+            <div class="container">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h1 class="display-4 fw-bold lh-1 mb-3">
+                        PEÇAS E ACESSÓRIOS<br>
+                        <span class="text-destaque">COM QUALIDADE</span>
+                    </h1>
+                    <h2 class="h4 mb-4">E ATENDIMENTO ESPECIALIZADO!</h2>
+                    <p class="lead mb-4 text-light">
+                        Tudo o que você precisa para o seu carro<br>
+                        em um só lugar. Venha para a <span class="text-destaque">DIDI</span>!
+                    </p>
+                    <a href="https://wa.me/5511999999999" class="btn btn-primary btn-lg px-5"> <img
+                            src="assets/icons/whats1.svg" alt=" WhatsApp" class="me-2" height="30">
+                        Solicite um orçamento
+                    </a>
+                </div>
             </div>
         </section>
-        
-        <section id="produtos">
-            <img src="/assets/img/Produtos.png" alt="Imagem de produtos">
 
-            <div class="farois">
-                <img src="/assets/img/farol.png" alt="Imagem de farol">
-                <h2>Farois</h2>
-                <p>Diversos modelos <br> e marcas.</p>
+        <section id="diferenciais" class="py-0">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+
+                    <div class="col-md-6 col-lg-3 separador-vertical">
+                        <div class="card-diferencial h-100 text-center">
+                            <img src="assets/icons/qualidade.svg" alt="Ícone Qualidade" class="icone-diferencial">
+                            <h3 class="h6 fw-bold mb-2">PRODUTOS DE QUALIDADE</h3>
+                            <p class="small mb-0">Trabalhamos com as melhores<br>marcas do mercado.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 separador-vertical">
+                        <div class="card-diferencial h-100 text-center">
+                            <img src="assets/icons/atendente.svg" alt="Ícone Atendimento" class="icone-diferencial">
+                            <h3 class="h6 fw-bold mb-2">ATENDIMENTO ESPECIALIZADO</h3>
+                            <p class="small mb-0">Equipe pronta para te ajudar<br>a encontrar o que precisa.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 separador-vertical">
+                        <div class="card-diferencial h-100 text-center">
+                            <img src="assets/icons/seguranca.svg" alt="Ícone Segurança" class="icone-diferencial">
+                            <h3 class="h6 fw-bold mb-2">CONFIANÇA E SEGURANÇA</h3>
+                            <p class="small mb-0">Mais de anos oferecendo<br>o melhor para você.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card-diferencial h-100 text-center">
+                            <img src="assets/icons/agilidade.svg" alt="Ícone Agilidade" class="icone-diferencial">
+                            <h3 class="h6 fw-bold mb-2">AGILIDADE</h3>
+                            <p class="small mb-0">Orçamento rápido e entrega<br>ágil para seu conforto.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="linha-inferior"></div>
             </div>
-
-            <div class="lanternas">
-                <img src="/assets/img/lanterna.png" alt="Imagem de lanterna">
-                <h2>Lanternas</h2>
-                <p>Segurança e estilo <br> para o seu carro.</p>
-            </div>
-
-            <div class="lampadas">
-                <img src="/assets/img/lampada.png" alt="Imagem de lâmpada">
-                <h2>Lâmpadas</h2>
-                <p>Mais brilho e <br> durabilidade.</p>
-            </div>
-
-            <div class="bateria">
-                <img src="/assets/img/bateria.png" alt="Imagem de bateria">
-                <h2>Baterias</h2>
-                <p>As melhores marcas <br> e maior durabilidade.</p>
-            </div>
-
-            <div class="paleta">
-                <img src="/assets/img/palhetas.png" alt="Imagem de paleta">
-                <h2>Paletas</h2>
-                <p>Visibilidade e segurança <br> em qualquer clima.</p>
-            </div>
-
-            <div class="acessorios">
-                <img src="/assets/img/acessorios.png" alt="Imagem de acessórios">
-                <h2>Acessórios</h2>
-                <p>Conforto, proteção e <br> personalização.</p>
-            </div>
-
-            <button>Ver todos os nossos produtos</button>
         </section>
 
-        <section id="sobre">
-            <h1>Sobre a Didi</h1>
-            <p>A DIDI Acessórios Automotivos atua no mercado oferecendo peças e acessórios para diversos modelos de veículos, sempre priorizando qualidade, confiança e um atendimento personalizado.</p>
-            <p>Trabalhamos com produtos de marcas reconhecidas, buscando oferecer as melhores soluções para quem deseja manter seu veículo em perfeito estado.</p>
-            <p>Nosso compromisso é garantir um atendimento rápido, preços justos e a satisfação de cada cliente</p>
-            <img src="assets/img/marcas.png" alt="Imagem de marcas" width="732px" height="300px">
+        <section id="produtos" class="py-0">
+            <div class="container py-0">
+                <h2 class="text-center fw-bold mb-5 titulo-produtos text-white">NOSSOS PRODUTOS</h2>
+
+                <div class="row g-3 mb-5 justify-content-center">
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/farol.png" alt="Faróis">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">FARÓIS</h3>
+                            <p class="small text-secondary mb-0">Diversos modelos e marcas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/lanterna.png" alt="Lanternas">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">LANTERNAS</h3>
+                            <p class="small text-secondary mb-0">Segurança e estilo para seu carro.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/lampada.png" alt="Lâmpadas">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">LÂMPADAS</h3>
+                            <p class="small text-secondary mb-0">Mais brilho e durabilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/bateria.png" alt="Baterias">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">BATERIAS</h3>
+                            <p class="small text-secondary mb-0">As melhores marcas e maior durabilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/palhetas.png" alt="Palhetas">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">PALHETAS</h3>
+                            <p class="small text-secondary mb-0">Visibilidade e segurança em qualquer clima.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card-produto p-3 h-100">
+                            <div class="img-produto-container">
+                                <img src="/assets/img/acessorios.png" alt="Acessórios">
+                            </div>
+                            <h3 class="h6 fw-bold text-white mb-2">ACESSÓRIOS</h3>
+                            <p class="small text-secondary mb-0">Conforto, proteção e personalização</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center">
+                    <button class="btn btn-ver-todos px-4 py-2">VER TODOS OS NOSSOS PRODUTOS</button>
+                </div>
+
+                <div class="linha-inferior-produtos"></div>
+            </div>
         </section>
 
-        <section id="contato">
-            
-            <h2>Entre em contato</h2>
+        <section id="sobre" class="py-5">
+            <div class="container py-1">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">SOBRE A <span class="text-primary">DIDI</span></h2>
+                        <p class="text-secondary">A DIDI Acessórios Automotivos atua no mercado oferecendo peças e
+                            acessórios para diversos modelos de veículos, sempre priorizando qualidade, confiança e um
+                            atendimento personalizado.</p>
+                        <p class="text-secondary">Trabalhamos com produtos de marcas reconhecidas, buscando oferecer as
+                            melhores soluções para quem deseja manter seu veículo em perfeito estado.</p>
+                        <p class="text-secondary mb-0">Nosso compromisso é garantir um atendimento rápido, preços justos
+                            e a satisfação de cada cliente.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/img/marcasepagamentos.jpg" alt="Marcas como FIAT, etc." class="img-fluid mb-4">
+                    </div>
 
-            <div id=" contato">
-                <ul>
-                    <li>
-                        <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
-                            <img src="/assets/icons/whatsred.svg" alt="Ícone do WhatsApp" width="40px" height="40px">
-                            <p>61 99513-0205</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:+556136377267">
-                            <img src="/assets/icons/phone.svg" alt="Ícone do Telefone" width="40px" height="40px">
-                            <p>(61) 3637-7267</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://maps.app.goo.gl/uBkcVrq9FcEsdmSa9" target="_blank">
-                            <img src="/assets/icons/localizacao.svg" alt="Ícone de Localização" width="40px" height="40px">
-                            <p>Quadra Qa2 mc lote 3 loja 2 setor leste. Planaltina-GO</p>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="/assets/icons/relogio.svg" alt="Ícone de Relógio" width="40px" height="40px">
-                        <p>Segunda a Sexta: 08:00 às 18:00 <br>Sábado: 08:00 às 16:00</p>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/didiacessorios2023?igsh=NTBqeXEzOTdkbnF4" target="_blank">
-                            <img src="/assets/icons/instagram.png" alt="Ícone do Instagram" width="40px" height="40px">
-                            <p>@didiacessorios2023</p>
-                        </a>
-                    </li>
-                </ul>
+                    <div class="linha-inferior-produtos"></div>
+                </div>
+
             </div>
-            <div class="fachada">
-                <img src="/assets/img/fachada.png" alt="Imagem da fachada da DIDI Acessórios Automotivos" width="480px" height="420px">
-            </div>
-            <div class="localizacao">
 
-                <h2>Onde estamos</h2>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1922.7698977944406!2d-47.61241257190702!3d-15.455370316090375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a6ff892d5be1f%3A0x2194a25c54a45535!2sDidi%20Acessorios%20Automotivos!5e0!3m2!1spt-BR!2sbr!4v1786059348129!5m2!1spt-BR!2sbr" width="350" height="240" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
-                
-                <a href="https://maps.app.goo.gl/uBkcVrq9FcEsdmSa9" target="_blank">
-                    <button> <img src="/assets/icons/mapa.svg" alt="Ícone de Mapa" width="40px"> Ver no mapa</button>
-                </a>
-            </div> 
         </section>
-
     </main>
+
+    <footer id="footer" class="py-0 footer-bg">
+        <div class="container py-0">
+            <div class="row g-1 align-items-start">
+
+                <div class="col-lg-6">
+                    <h4 class="titulo-rodape">FALE CONOSCO</h4>
+                    <ul class="lista-contatos">
+
+                        <li class="item-contato">
+                            <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank"
+                                class="link-contato">
+                                <img src="/assets/icons/whatsred.svg" alt="Ícone do WhatsApp" width="40" height="40">
+                                <span>61 99513-0205</span>
+                            </a>
+                        </li>
+
+                        <li class="item-contato">
+                            <a href="tel:+556136377267" class="link-contato">
+                                <img src="/assets/icons/phone.svg" alt="Ícone do Telefone" width="40" height="40">
+                                <span>(61) 3637-7267</span>
+                            </a>
+                        </li>
+
+                        <li class="item-contato">
+                            <a href="https://maps.app.goo.gl/uBkcVrq9FcEsdmSa9" target="_blank" class="link-contato">
+                                <img src="/assets/icons/localizacao.svg" alt="Ícone de Localização" width="40"
+                                    height="40">
+                                <span>Quadra Qa2 mc lote 3 loja 2 setor leste. Planaltina-GO</span>
+                            </a>
+                        </li>
+
+                        <li class="item-contato texto-contato mt-1">
+                            <img src="assets/icons/relogio.svg" alt="Horário" width="40" height="40">
+                            <span>Seg a Sex: 08:00 às 18:00<br>Sáb: 08:00 às 13:00</span>
+                        </li>
+
+                        <li class="item-contato">
+                            <a href="https://www.instagram.com/didiacessorios2023?igsh=NTBqeXEzOTdkbnF4" target="_blank"
+                                class="link-contato">
+                                <img src="/assets/icons/instagram.png" alt="Ícone do Instagram" width="40" height="40">
+                                <span>@didiacessorios2023</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="titulo-rodape">ONDE ESTAMOS</h4>
+
+                    <div class="mapa-container">
+                        <iframe class="w-100 h-100 border-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3845.5315249186806!2d-47.612515!3d-15.455816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a6ff892d5be1f%3A0x2194a25c54a45535!2sDidi%20Acessorios%20Automotivos!5e0!3m2!1spt-BR!2sbr!4v1791900936719!5m2!1spt-BR!2sbr"allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                    </div>
+
+                    <a href="https://maps.app.goo.gl/LgUAdeUDShksqJ8v5" target="_blank" class="btn-ver-mapa">
+                        <img src="assets/icons/mapa.svg" alt="Ícone Mapa" class="icone-btn">
+                        VER NO MAPA
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="text-center m-1 p-1 border-top border-rodape">
+                <small class="texto-copyright">&copy; 2024 DIDI Acessórios Automotivos. Todos os direitos reservados. Desenvolvido por Julia Karolaynne.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
